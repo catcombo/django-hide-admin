@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "django-hide-admin"
+version = "1.0.0"
+description = "Hides Django admin from unauthorized users"
+authors = ["Evgeniy Krysanov <evgeniy.krysanov@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/catcombo/django-hide-admin"
+packages = [
+    { include = "hide_admin" },
+]
+keywords = ["django", "admin"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = "^2.2"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+flake8-black = "*"
+flake8-coding = "*"
+flake8-commas = "*"
+flake8-isort = "*"
+flake8-quotes = "*"
+isort = "*"
+
+[tool.black]
+line-length = 120
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
