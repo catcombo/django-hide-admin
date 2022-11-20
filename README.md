@@ -4,6 +4,11 @@ Hides Django admin from users without staff level access. Anonymous users or use
 
 Since the Django admin login page is not available, your project should have a login page for users and staff. Once staff are logged in, they can open `/admin/` (by default) to access admin interface.
 
+# Prerequisites
+
+- Python 3.7+
+- Django 2.2+
+
 # Installation
 
 ```
