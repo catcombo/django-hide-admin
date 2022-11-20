@@ -6,7 +6,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.messages",
     "django.contrib.sessions",
-    "test_project",
+    "tests",
 ]
 
 MIDDLEWARE = [
@@ -24,12 +24,13 @@ TEMPLATES = [
             "context_processors": [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django.template.context_processors.request",
             ],
         },
     },
 ]
 
-ROOT_URLCONF = "test_project.urls"
+ROOT_URLCONF = "tests.urls"
 
 DATABASES = {
     "default": {
